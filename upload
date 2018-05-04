@@ -1,0 +1,13 @@
+#!/bin/sh
+echo "==== START"
+
+RSYNC=/usr/bin/rsync
+SSH=/usr/bin/ssh
+PORT=3333
+RUSER=sites
+RHOST=li.agiletortoise.com
+RPATH=/home/sites/sites/reference.getdrafts.com/
+LPATH=/Users/greg/Projects-Web/drafts-reference/_site/
+
+$RSYNC -atzpv --del $LPATH -e "ssh -p $PORT" $RUSER@$RHOST:$RPATH
+echo "==== END"
