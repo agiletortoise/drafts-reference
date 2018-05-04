@@ -13,13 +13,13 @@ Calendar objects are used to manipulate and create calendars in the built-in Cal
 #### Instance Functions
 
 - **update()** *-> boolean*
-  - Save changes to the list.
+  - Save changes to the calendar.
 - **createEvent()** *-> Event*
   - Create a new Event object in this calendar.
 
 #### Class Functions
 
-- **findOrCreate(title)** *-> Reminder*
+- **findOrCreate(title)** *-> Calender*
   - Searches for a calendar matching the title.  If none is found, creates a new list with that title in your default calendars account.  If more than one calendar with the same name exist in Calendars, the first found will be returned.
 
 #### Examples
