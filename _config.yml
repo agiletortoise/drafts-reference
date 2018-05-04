@@ -1,1 +1,30 @@
+title: Drafts Scripting Reference
 theme: jekyll-theme-minimal
+baseurl:
+
+markdown: kramdown
+highlighter: rouge
+
+app-store-url: https://itunes.apple.com/app/id1236254471?ls=1&mt=8&at=11l4Cf&ct=site
+# google_analytics: UA-1639692-22
+
+collections:
+  objects:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: objects
+    values:
+      layout: default
+
+twitter:
+  username: draftsapp
+facebook:
+  publisher: https://www.facebook.com/draftsapp
+social:
+  name: Drafts App
+  links:
+    - http://twitter.com/draftsapp
+    - https://www.facebook.com/draftsapp
+image: http://getdrafts.com/images/drafts-ogimage.png

@@ -1,0 +1,10 @@
+<div id='object-nav'>
+  <h4>Objects</h4>
+<ul>
+    {% for doc in site.objects %}
+      {% if doc.category == "object" %}
+        <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+</ul>
+</div>
