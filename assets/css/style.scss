@@ -52,7 +52,7 @@ The content `<div>` is where all your content goes.
 */
 .content {
     margin: 0 120px 0 1em;
-    padding: 0 1em;
+    padding: 0 .5em;
     max-width: 800px;
     margin-bottom: 50px;
     line-height: 1.5em;
@@ -67,8 +67,8 @@ The content `<div>` is where all your content goes.
 }
 
 .footer {
-    margin: 0 1em;
-    padding: 3em 2em;
+    margin: 0 120px 0 1em;
+    padding: 3em 1em;
     max-width: 700px;
     margin-bottom: 50px;
     line-height: 1.5em;
@@ -76,10 +76,10 @@ The content `<div>` is where all your content goes.
 }
 
 .header {
-     margin: 0 1em;
+     margin: 0 120px 0 1em;
      color: #333;
      text-align: left;
-     padding: 1em 2em 0;
+     padding: 1em 2em 0 .5em;
      border-bottom: 1px solid #eee;
  }
     .header h1 {
@@ -380,9 +380,9 @@ div.highlight {
 }
 
 #object-nav {
-  position: fixed;
+  position: absolute;
   top: 0px;
-  bottom: 0px;
+  max-height: 100%;
   overflow: scroll;
   right: 0px;
   border: 1px solid #ddd;
