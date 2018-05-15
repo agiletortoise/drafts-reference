@@ -15,6 +15,8 @@ Typically scripting actions that work like custom keyboard commands and similar 
   - Access or set current focus mode status.
 - **linkModeEnabled** *[boolean]*
   - Access or set current link mode status.
+- **isActive** *[boolean]*
+  - Is editor current focused for editing.
 
 #### Instance Functions
 
@@ -51,7 +53,7 @@ Typically scripting actions that work like custom keyboard commands and similar 
 - **setSelectedText(string)**
   - Replace the contents of the last text selection with a string.
 - **getSelectedRange()** *-> [location, length]*
-  - Get the last selected range in the editor. Returns an a with the start location of the range and the length of the selection.
+  - Get the last selected range in the editor. Returns an array with the start location of the range and the length of the selection.
 - **getSelectedLineRange()** *->[location, length]*
   - Get the current selected text range extended to the beginning and end of the lines it encompasses.
 - **setSelectedRange(number, number)**
