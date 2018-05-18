@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <meta name="apple-itunes-app" content="app-id=1236254471, affiliate-data=at=11l4Cf&amp;ct=web_banner">
     <link rel="icon" href="{{ site.baseurl }}/images/favicon.png">
 {% seo %}
 <meta property="og:image" content="http://getdrafts.com/images/drafts-ogimage.png" />
@@ -45,6 +44,15 @@
                 <li class="pure-menu-item"><a href="{{ site.baseurl }}/topics" class="pure-menu-link">Topics</a></li>
 
                 <li class="pure-menu-item menu-item-divided">
+                    <a href="#" class="pure-menu-link">Objects</a>
+                </li>
+                {% for doc in site.objects %}
+                  {% if doc.category == "object" %}
+                    <li class="pure-menu-item"><a href="{{ doc.url }}" class="pure-menu-link object-link">{{ doc.title }}</a></li>
+                  {% endif %}
+                {% endfor %}
+
+                <li class="pure-menu-item menu-item-divided">
                     <a href="#" class="pure-menu-link">Resources</a>
                 </li>
 
@@ -62,7 +70,6 @@
         </div>
 
         <div class="content">
-          {% include navigation.html %}
           {{ content }}
         </div>
 
@@ -72,7 +79,7 @@
               <img src="{{ site.baseurl }}/images/appstore.svg">
             </a>
           </div>
-          <a href="/press-kit">Press Kit</a><br>
+          <a href="http://getdrafts.com/press-kit">Press Kit</a><br>
           Drafts is a registered Trademark of Agile Tortoise, Inc.<br>
           &copy; 2012-2018 by <a href="https://agiletortoise.com/">Agile Tortoise, Inc.</a><br>
           <a href="https://agiletortoise.com/privacy-policy">Privacy</a> | <a href="https://agiletortoise.com/terms">Terms</a>

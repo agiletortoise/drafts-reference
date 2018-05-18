@@ -9,18 +9,33 @@ Calendar objects are used to manipulate and create calendars in the built-in Cal
 
 - **title** *[string]*
   - The name of the list.
+- **allowsContentModification** *[boolean]*
+  - A Boolean value that indicates whether you can add, edit, and delete items in the calendar.
+- **isImmutable** *[boolean]*
+  - A Boolean value indicating whether the calendar’s properties can be edited or deleted.
 
 #### Instance Functions
 
 - **update()** *-> boolean*
-  - Save changes to the list.
+  - Save changes to the calendar.
 - **createEvent()** *-> Event*
   - Create a new Event object in this calendar.
+- **events(startDate, endDate)** *-> [array of [Events](/objects/event)]*
+  - Returns array of events on the calendar between the start and end dates specified.
 
 #### Class Functions
 
-- **findOrCreate(title)** *-> Reminder*
+- **findOrCreate(title)** *-> Calendar*
   - Searches for a calendar matching the title.  If none is found, creates a new list with that title in your default calendars account.  If more than one calendar with the same name exist in Calendars, the first found will be returned.
+- **find(title)** *-> Calendar*
+  - Searches for a calendar matching the title.  If none is found, return `undefined`.
+- **getAllCalendars()** *-> [Calendar]*
+  - Get an array all known calendars on the device.
+
+#### Class Properties
+
+- **default** *[Calendar]*
+  - Returns the system default calendar configured for new events.
 
 #### Examples
 
@@ -34,5 +49,17 @@ event.endDate = Date.parse("10pm next friday");
 event.isAllDay = false;
 if (!event.update()) {
   console.log(event.lastError);
+}
+```
+
+```javascript
+// load a calendar
+let cal = Calendar.find("Test");
+// loop over events in the last 30 days and alert the name of each.
+if (cal) {
+	let events = cal.events((30).days().ago(), new Date());
+	for (let event of events) {
+		alert(event.title);
+	}
 }
 ```

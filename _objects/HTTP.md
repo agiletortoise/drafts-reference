@@ -7,7 +7,7 @@ The HTTP and HTTPResponse objects are used to run synchronous HTTP requests to c
 
 ### Instance Functions
 
-- **request(settings)** -> [HTTPResponse]({{ site.baseurl }}/objects/HTTPResponse)
+- **request(settings)** *-> {% ref HTTPResponse %}
   - parameters:
     - **settings** [object]: A javascript object supporting the following options:
       - *url* [string, required]: The HTTP URL to make the request.
@@ -22,7 +22,7 @@ The HTTP and HTTPResponse objects are used to run synchronous HTTP requests to c
 
 ### Class Functions
 
-- **create()** -> HTTP object
+- **create()** *-> HTTP object*
   - create a new HTTP object.
 
 ### Examples
