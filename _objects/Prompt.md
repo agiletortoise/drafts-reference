@@ -72,6 +72,11 @@ Prompts allow the creation and display of custom dialogs.
 - **show()** *-> Bool*
   - Displays the prompt, return true if the user selected one of the buttons in the buttons array, false if the user selected the "Cancel" button.  After the dialog has been show, the `buttonPressed` property will contain the name of the button selected by the user.
 
+### Class Functions
+
+- **create()** *-> Prompt*
+  - Creates a new Prompt object. 
+
 ### Examples
 
 ```javascript

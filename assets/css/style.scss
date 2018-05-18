@@ -51,7 +51,7 @@ This is the parent `<div>` that contains the menu and the content area.
 The content `<div>` is where all your content goes.
 */
 .content {
-    margin: 0 120px 0 1em;
+    margin: 0 1em 0 1em;
     padding: 0 .5em;
     max-width: 800px;
     margin-bottom: 50px;
@@ -76,7 +76,7 @@ The content `<div>` is where all your content goes.
 }
 
 .header {
-     margin: 0 120px 0 1em;
+     margin: 0 1em 0 1em;
      color: #333;
      text-align: left;
      padding: 1em 2em 0 .5em;
@@ -147,7 +147,8 @@ appears on the left side of the page.
     #menu .menu-item-divided {
       background-color: #333;
       a {
-        color: #eee;
+        color: #ddd;
+        font-weight: bold;
       }
     }
         /*
@@ -183,6 +184,11 @@ appears on the left side of the page.
         text-transform: none;
         font-weight: normal;
         padding: 0;
+    }
+
+    #menu a.object-link {
+      padding-left: 1.25em;
+      color: #efefef;
     }
 
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
@@ -379,34 +385,34 @@ div.highlight {
   padding: .25em 1em;
 }
 
-#object-nav {
-  position: absolute;
-  top: 0px;
-  max-height: 100%;
-  overflow: scroll;
-  right: 0px;
-  border: 1px solid #ddd;
-  padding: 0em;
-  margin: 0 0 0 1em;
-  background-color: #efefef;
-
-  h4 {
-    margin: 0;
-    padding: .25em;
-    background-color: #ddd;
-    text-align: center;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: .5em;
-    padding: 0;
-
-    li {
-      a { text-decoration: none; }
-      margin: .5em 0;
-      font-weight: 600;
-      font-size: .9em;
-    }
-  }
-}
+// #object-nav {
+//   position: absolute;
+//   top: 0px;
+//   max-height: 100%;
+//   overflow: scroll;
+//   right: 0px;
+//   border: 1px solid #ddd;
+//   padding: 0em;
+//   margin: 0 0 0 1em;
+//   background-color: #efefef;
+//
+//   h4 {
+//     margin: 0;
+//     padding: .25em;
+//     background-color: #ddd;
+//     text-align: center;
+//   }
+//
+//   ul {
+//     list-style-type: none;
+//     margin: .5em;
+//     padding: 0;
+//
+//     li {
+//       a { text-decoration: none; }
+//       margin: .5em 0;
+//       font-weight: 600;
+//       font-size: .9em;
+//     }
+//   }
+// }
