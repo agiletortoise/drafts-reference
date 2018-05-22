@@ -1,6 +1,11 @@
 ---
 ---
 
+$documentation-color: #275488;
+$action-directory-color: #358035;
+$community-color: #76363A;
+$reference-color: #6B6E74;
+$search-color: #354967;
 
 html, button, input, select, textarea,
     .pure-g [class *= "pure-u"] {
@@ -164,7 +169,7 @@ appears on the left side of the page.
     */
     #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: #0F4280;
+        background: $reference-color;
     }
         /*
         This styles a link within a selected menu item `<li>`.
@@ -189,6 +194,29 @@ appears on the left side of the page.
     #menu a.object-link {
       padding-left: 1.25em;
       color: #efefef;
+    }
+
+    #menu .documentation {
+      background-color: $documentation-color;
+      a {
+        color: white;
+      }
+    }
+
+    #menu .action-directory {
+      background-color: $action-directory-color;
+      a {
+        color: white;
+      }
+    }
+    #menu .community {
+      background-color: $community-color;
+      a {
+        color: white;
+      }
+    }
+    #menu .search {
+      background-color: $search-color;
     }
 
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
@@ -384,6 +412,8 @@ div.callout {
 div.highlight {
   padding: .25em 1em;
 }
+
+
 
 // #object-nav {
 //   position: absolute;

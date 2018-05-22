@@ -1,8 +1,8 @@
 ---
-title: Drafts Scripting Reference
+title: Drafts Script Reference
 ---
 
-This wiki will contain reference documentation and example scripts for use with Drafts 5 and greater.
+Reference documentation and example scripts for use with Drafts 5 and greater.
 
 - **More information about Drafts?** [Visit getdrafts.com](http://getdrafts.com/)
 - **Need help with an action script?** [Join the Drafts Community](https://forums.getdrafts.com/)
