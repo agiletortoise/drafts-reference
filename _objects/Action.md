@@ -3,12 +3,12 @@ title: Action
 category: object
 ---
 
-A single global "action" object is created and available in the scripts to inquire about the current action and control flow.
+In addition to being able to lookup an action using the find method, a single global `action` object is created and available in scripts to inquire about the current action and control flow.
 
 ### Instance Properties
 
 - **name** *[name, readonly]*
-  - The name of the action currently being executed.
+  - The name of the action.
 
 ### Class Functions
 
