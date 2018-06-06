@@ -20,4 +20,5 @@ In addition to being able to lookup an action using the find method, a single gl
 ```javascript
 // find action
 var action = Action.find("Copy");
+app.queueAction(action, draft);
 ```

@@ -12,6 +12,8 @@ Represents an action group. Can be used to inquire and load action groups in the
 
 ### Class Functions
 
+- **getAll()** *-> [array of ActionGroup objects]*
+  - Get list of all available action groups.
 - **find(name)** *-> ActionGroup*
   - Search for action group matching the name passed and return it if found. Returns undefined if not found.
 
@@ -19,5 +21,6 @@ Represents an action group. Can be used to inquire and load action groups in the
 
 ```javascript
 // find action
-var action = Action.find("Copy");
+var group = ActionGroup.find("Basic");
+app.loadActionGroup(group);
 ```
