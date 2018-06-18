@@ -60,6 +60,12 @@ Prompts allow the creation and display of custom dialogs.
       - **minimumDate** _[date]_: Lowest selectable date.
       - **maximumDate** _[date]_: Highest selectable date.
       - **minuteInterval** _[number]_: How many minutes between each selectable time interval. 60 must be divisible by this number. Example: 15 for minute intervals.
+- **addPicker(name, label, columns, selectedRows)**
+  - Add a picker to the prompt, with the arguments as below. Picker can contain multiple rows. The fieldValues entry for this will be a array of selected index values object.
+    - **name** _[string]_: Identifier for the field. This will be used as the key in the `fieldValues` dictionary to access the contents of the field after calling `show()`.
+    - **label** _[string]_: User-friendly text label to place next to the field.
+    - **columns** _[array of arrays of strings]_: The values to display in the picker. Should be an array containing arrays of string values, each sub-array representing a column in the picker. Example two column picker: `[["Item 1", "Item 2"],["Column 2 Item 1", "Column 2 Item 2"]]`
+    - **selectedRows** _[array of numbers]_: Array of zero-based index values to set the initial selected row in each column.
 - **addSelect(name, label, values, selectedValues, allowMultiple)**
   - Add a select control. Returns an array of string values in fieldValues.
     - **name** _[string]_: Identifier for the field. This will be used as the key in the `fieldValues` dictionary to access the contents of the field after calling `show()`.
@@ -75,7 +81,7 @@ Prompts allow the creation and display of custom dialogs.
 ### Class Functions
 
 - **create()** *-> Prompt*
-  - Creates a new Prompt object. 
+  - Creates a new Prompt object.
 
 ### Examples
 
