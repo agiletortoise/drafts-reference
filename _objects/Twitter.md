@@ -12,15 +12,18 @@ Script integration with [Twitter](http://twitter.com). The `updateStatus` method
 - **lastError** *[string]*
   - If a function fails, this property will contain the last error as a string message, otherwise it will be undefined.
 
-### Functions
+### Convenience Functions
 
 - **updateStatus(content)** *-> boolean*
   - Post a status update (tweet) to Twitter. Returns true if successful, false if not. After success the lastResponse object can be used to inspect response and get details such as the ID of the tweet created. Refer to [Twitter API POST /status/update documentation](https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update) for response details.
   - **Parameters**
     - content *[string]*: The string content of the tweet to post.
+
+### Functions
+
 - **request(settings)** *-> {% ref HTTPResponse %}*
   - Execute a request against the Twitter API. For successful requests, the HTTPResponse object will contain an object or array or objects decoded from the JSON returned by Twitter as appropriate to the request made. Refer to Twitter's API documentation for details about the expected parameters and responses. Drafts will handle wrapping the request in the appropriate OAuth authentication flow.
-  - parameters:
+  - **Parameters:**
     - **settings** [object]: A javascript object supporting the following options:
       - *url* [string, required]: The full URL to the endpoint in the [Twitter API](https://developer.twitter.com/en/docs/api-reference-index).
       - *method* [string, required]: The HTTP method, like "GET", "POST", etc.

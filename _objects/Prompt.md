@@ -30,6 +30,7 @@ Prompts allow the creation and display of custom dialogs.
       - **autocorrect** _[boolean]_: true or false to enable autocorrect.
       - **autocapitalization** _[string]_: Valid values are "none", "sentences", "words".
       - **keyboard** _[string]_: Type of keyboard to display. Valid values are "default", "numbersAndPunctuation", "numberPad", "phonePad", "namePhonePad", "emailAddress", "decimalPad", "webSearch", "URL". More information on types in [Apple's Documentation](https://developer.apple.com/documentation/uikit/uikeyboardtype)
+      - **wantsFocus** _[boolean]_: If true, the prompt uses this as a hint to select this field for editing when the prompt is displayed. Only set this option on one field in the prompt.
 - **addTextView(name, label, initialText, options)**
   - Add a text input field to the prompt, with the arguments as follows:
     - **name** _[string]_: Identifier for the field. This will be used as the key in the `fieldValues` dictionary to access the contents of the field after calling `show()`.
@@ -40,6 +41,7 @@ Prompts allow the creation and display of custom dialogs.
       - **autocorrect** _[boolean]_: true or false to enable autocorrect.
       - **autocapitalization** _[string]_: Valid values are "none", "sentences", "words".
       - **keyboard** _[string]_: Type of keyboard to display. Valid values are "default", "numbersAndPunctuation", "numberPad", "phonePad", "namePhonePad", "emailAddress", "decimalPad", "webSearch", "URL". More information on types in [Apple's Documentation](https://developer.apple.com/documentation/uikit/uikeyboardtype)
+      - **wantsFocus** _[boolean]_: If true, the prompt uses this as a hint to select this field for editing when the prompt is displayed. Only set this option on one field in the prompt.
 - **addPasswordField(name, label, initialValue)**
   - Same as `addTextField`, but the input field will be password masked.
 - **addSwitch(name, label, initialValue)**
@@ -73,8 +75,8 @@ Prompts allow the creation and display of custom dialogs.
     - **values** _[array of strings]_: The array of string values that will be available to select.
     - **selectedValues** _[array of strings]_: Array of string values that should be initially selected when the prompt is displayed. All values in this array should match values in the `values` array.
     - **allowMultiple** _[boolean]_: If false, selecting a value will deselect all other values. If true, the user may select multiple items.
-- **addButton(name)**
-  - Add a button to the array of buttons to be displayed.  All buttons should be created *before* calling `show()`.
+- **addButton(name, value)**
+  - Add a button to the array of buttons to be displayed. All buttons should be created *before* calling `show()`. The `value` parameter is optional and only needed to associate a different value than will be displayed in the button.  For example, if you call `prompt.addButton("First Button", 1)`, after calling `prompt.show()` if that button is pressed, the `prompt.buttonPressed` will contain the number value `1`.
 - **show()** *-> Bool*
   - Displays the prompt, return true if the user selected one of the buttons in the buttons array, false if the user selected the "Cancel" button.  After the dialog has been show, the `buttonPressed` property will contain the name of the button selected by the user.
 
