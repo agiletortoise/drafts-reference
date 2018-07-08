@@ -31,7 +31,7 @@ Calendar objects are used to manipulate and create calendars in the built-in Cal
   - Searches for a calendar matching the title.  If none is found, return `undefined`.
 - **getAllCalendars()** *-> [Calendar]*
   - Get an array all known calendars on the device.
-- **default()** *[Calendar]*
+- **default()** *Calendar*
   - Returns the system default calendar configured for new events.
 
 #### Examples

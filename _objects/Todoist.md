@@ -5,7 +5,9 @@ category: object
 
 Script integration with [Todoist](http://todoist.com). This object handles OAuth authentication and request signing. The entire [Todoist REST API](https://developer.todoist.com/rest/v8) can be used with the `request` method, and convenience methods are provided for common API endpoints to manage tasks, projects, comments and labels.
 
-These methods are direct mappings of the REST API calls provided by Todoist. Most take an `options` parameter which is a javascript object containing the parameters to be passed to the API, and and the method decodes the JSON response from Todoist and returns it as a Javascript object (or array of objects) with the values as specified in the Todoist API docs.
+The `quickAdd` method is mostly likely what you are looking for to create tasks as it supports the shorthand the task entry box in Todoist supports to parse projects, etc.
+
+Other methods are direct mappings of the REST API calls provided by Todoist. Most take an `options` parameter which is a javascript object containing the parameters to be passed to the API, and and the method decodes the JSON response from Todoist and returns it as a Javascript object (or array of objects) with the values as specified in the Todoist API docs.
 
 If an API calls fails, typically the result will be an `undefined` value, and the `lastError` property will contains error detail information for troubleshooting.
 
@@ -17,6 +19,15 @@ If an API calls fails, typically the result will be an `undefined` value, and th
   - If a function fails, this property will contain the last error as a string message, otherwise it will be undefined.
 
 ### Convenience Functions
+
+#### Quick Add
+
+- **quickAdd(text, note, reminder)** -> *[object]*
+  - *parameters*
+    - **text** *[string, required]*: text to use to create the task. Supports [Todoist quick add notation](https://support.todoist.com/hc/en-us/articles/115001745265-Task-Quick-Add) for specifying projects, priority, labels, etc. just as if you were using the Todoist quick add window.
+    - **note** *[string, optional]*: Optional text to attach as a comment with the task.
+    - **reminder** *[string, optional]*: Optional natural language date specifying for creating a task reminder.
+  - See [Todoist method reference for supported options and return](https://developer.todoist.com/sync/v7/#quick)
 
 #### Tasks
 
