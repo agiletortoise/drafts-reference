@@ -9,7 +9,7 @@ Calendar objects are used to manipulate and create calendars in the built-in Cal
 
 - **title** *[string]*
   - The name of the list.
-- **allowsContentModification** *[boolean]*
+- **allowsContentModificationx** *[boolean]*
   - A Boolean value that indicates whether you can add, edit, and delete items in the calendar.
 - **isImmutable** *[boolean]*
   - A Boolean value indicating whether the calendar’s properties can be edited or deleted.
