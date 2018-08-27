@@ -18,6 +18,8 @@ Drafts defines a single global "app" object which provides access to application
 	- Is the draft list side panel is visible.
 - **isActionListVisible** *[boolean, readonly]*
 	- Is the action list side panel is visible.
+- **isIdleDisabled** *[boolean]*
+	- Is system sleep timer disabled preventing screen dimming/sleep.
 
 #### Instance Functions
 
@@ -42,6 +44,8 @@ Drafts defines a single global "app" object which provides access to application
 		- Load the {% ref ActionGroup %} in the action list side bar.
 	- **loadKeyboardActionGroup({% ref actionGroup %})** *-> boolean*
 		- Load the {% ref ActionGroup %} in the extended keyboard row.
+	- **setIdleDisabled(*boolean*)**
+		- Enable and disable the iOS system sleep timer to prevent screen dimming/sleep.
 - **Clipboard**
 	- **getClipboard()** *-> string*
 	  - Get current contents of the system clipboard.

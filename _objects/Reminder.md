@@ -33,7 +33,7 @@ Reminder objects represent individual tasks in a list in the built-in Reminders 
 - **update()** *-> boolean*
   - Save the task. Returns true if the task is successfully saved in Reminders.
 - **addAlarm([Alarm](/objects/alarm))** *-> boolean*
-  - Add an alarm object to the reminder. Be sure to update() to save after adding alarms. Return true if the alarm was successfully added.
+  - Add an alarm object to the reminder. Be sure to update() to save after adding alarms. Return true if the alarm was successfully added. *Note that reminders only support alarms created with the `Alarm.alarmWithDate` method.*
 - **removeAlarms()**
   - Remove any assigned alarms from the reminder.
 

@@ -20,6 +20,12 @@ Prompts allow the creation and display of custom dialogs.
 
 ### Functions
 
+- **addLabel(name, label, options)**
+  - Add an information text label to the prompt.
+    - **name** _[string]_: Identifier for the field.
+    - **label** _[string]_: The text of the label.
+    - **options** _[object]_: A dictionary of options for configuring the text field. Currently supported option keys below.
+      - **textSize** _[string]_: Requested font size for the label. Supported options are "body", "caption", and "headline".
 - **addTextField(name, label, initialText, options)**
   - Add a text input field to the prompt, with the arguments as follows:
     - **name** _[string]_: Identifier for the field. This will be used as the key in the `fieldValues` dictionary to access the contents of the field after calling `show()`.

@@ -10,7 +10,7 @@ Alarms are alerts which can be attached to Reminder and Event objects.
 - **alarmWithDate(date)** *-> Alarm*
   - Alarm set to remind at a specific date/time.
 - **alarmWithOffset(seconds)** *-> Alarm*
-  - Alarm set to remind at a specific number of seconds in the future.
+  - Alarm set to remind at a specific number of seconds relative to the start date of the event. *Note that alarms created with this methods are only supported on calendar events, not reminders.*
 
 #### Examples
 
