@@ -60,12 +60,15 @@ The Draft object represents a single draft.  When an action is run, the current 
   - create a new draft object. This is an in-memory object only, unless "update()" is called to save the draft.
 - **find(uuid)** *-> draft object*
   - find an existing draft based on UUID.
-- **query(queryString, filter, tags)** *-> [array of drafts]*
+- **query(queryString, filter, tags, omitTags, sort, sortDescending)** *-> [array of drafts]*
   - perform a search for drafts and return an array of matching draft objects.
   - **Parameters**
-    - *queryString*: a search string, as you would type in the search box in the draft list. Will find only drafts with a matching string in their contents. Use empty string ("") not to filter.
-    - *filter*: Filter by one of these allowed values: "inbox", "archive", "flagged", "trash", "all".
-    - *tags*: array of string tag names. Results will only include drafts with one or more of these tags assigned.
+    - **queryString** _[string]_: Search string, as you would type in the search box in the draft list. Will find only drafts with a matching string in their contents. Use empty string ("") not to filter.
+    - **filter** _[string]_: Filter by one of these allowed values: "inbox", "archive", "flagged", "trash", "all".
+    - **tags** _[array of strings]_: Results will only include drafts with one or more of these tags assigned.
+    - **omitTags** _[array of strings]_: Results will omit drafts with any of these tags assigned.
+    - **sort** _[string]_: Sort by. Allowed values: "created", "modified", "accessed", "name".
+    - **sortDescending** _[boolean]_: If true, sort descending.
 - **recentTags()** [array of strings]
   - Returns array of recently used tags. Helpful for building prompts to select tags.
 
@@ -73,8 +76,10 @@ The Draft object represents a single draft.  When an action is run, the current 
 
 ```javascript
 // create a new draft, assign content and save it
-
-var d = Draft.create();
+let d = Draft.create();
 d.content = "My new draft";
 d.update();
+
+// query a list of drafts in the inbox with the tag "blue"
+let drafts = Draft.query("", "inbox", ["blue"])
 ```
