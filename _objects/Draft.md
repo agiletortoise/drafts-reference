@@ -68,7 +68,8 @@ The Draft object represents a single draft.  When an action is run, the current 
     - **tags** _[array of strings]_: Results will only include drafts with one or more of these tags assigned.
     - **omitTags** _[array of strings]_: Results will omit drafts with any of these tags assigned.
     - **sort** _[string]_: Sort by. Allowed values: "created", "modified", "accessed", "name".
-    - **sortDescending** _[boolean]_: If true, sort descending.
+    - **sortDescending** _[boolean]_: If true, sort descending. Default: false.
+    - **sortFlaggedToTop** _[boolean]_: If true, sort flagged drafts to beginning. Default: false.
 - **recentTags()** [array of strings]
   - Returns array of recently used tags. Helpful for building prompts to select tags.
 

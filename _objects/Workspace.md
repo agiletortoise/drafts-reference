@@ -10,11 +10,11 @@ Represents a Workspace. Can be used to inquire and load workspaces and apply the
 - **name** *[string]*
   - The name of the workspace.
 - **queryString** *[string]*
-  - The name of the workspace.
+  - Search string to filter results. 
 - **tagFilter** *[string]*
-  - The name of the workspace.
+  - Tag string like "blue, !green" using "!" to omit a tag.
 - **tagFilterRequireAll** *[boolean]*
-  - The name of the workspace.
+  - If true, all (AND) tags in the tag filter must match, if false match any of the tags (OR).
 - **showPreview** *[boolean]*
   - Show preview of draft body in list.
 - **showTags** *[boolean]*
@@ -37,16 +37,18 @@ Represents a Workspace. Can be used to inquire and load workspaces and apply the
   - Query for a list of drafts contained in the workspace.
   - **Parameters**
     - **filter** _[string]_: Filter by one of these allowed values: "inbox", "archive", "flagged", "trash", "all".
-- **setFlaggedSort(sortBy, sortDescending)**
+- **setFlaggedSort(sortBy, sortDescending, sortFlaggedToTop)**
   - Set sort order for flagged.
   - **Parameters**
     - **sortBy** _[string]_: Sort by. Allowed values: "created", "modified", "accessed", "name".
     - **sortDescending** _[boolean]_: If true, sort in descending order.
-- **setArchiveSort(sortBy, sortDescending)**
+    - **sortFlaggedToTop** _[boolean]_: If true, sort flagged to beginning of results. Default: false
+- **setArchiveSort(sortBy, sortDescending, sortFlaggedToTop)**
   - Set sort order for archive.
   - **Parameters**
     - **sortBy** _[string]_: Sort by. Allowed values: "created", "modified", "accessed", "name".
     - **sortDescending** _[boolean]_: If true, sort in descending order.
+    - **sortFlaggedToTop** _[boolean]_: If true, sort flagged to beginning of results. Default: false
 
 ### Class Functions
 
