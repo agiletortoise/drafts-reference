@@ -81,8 +81,8 @@ Prompts allow the creation and display of custom dialogs.
     - **values** _[array of strings]_: The array of string values that will be available to select.
     - **selectedValues** _[array of strings]_: Array of string values that should be initially selected when the prompt is displayed. All values in this array should match values in the `values` array.
     - **allowMultiple** _[boolean]_: If false, selecting a value will deselect all other values. If true, the user may select multiple items.
-- **addButton(name, value)**
-  - Add a button to the array of buttons to be displayed. All buttons should be created *before* calling `show()`. The `value` parameter is optional and only needed to associate a different value than will be displayed in the button.  For example, if you call `prompt.addButton("First Button", 1)`, after calling `prompt.show()` if that button is pressed, the `prompt.buttonPressed` will contain the number value `1`.
+- **addButton(name, value, isDefault)**
+  - Add a button to the array of buttons to be displayed. All buttons should be created *before* calling `show()`. The `value` parameter is optional and only needed to associate a different value than will be displayed in the button.  For example, if you call `prompt.addButton("First Button", 1)`, after calling `prompt.show()` if that button is pressed, the `prompt.buttonPressed` will contain the number value `1`. `isDefault` is also optional and is used to specify a single button which will be pinned to the bottom of the prompt and respond to CMD-Return as the default button. If only one button is added to a prompt, it is assume to be the default.
 - **show()** *-> Bool*
   - Displays the prompt, return true if the user selected one of the buttons in the buttons array, false if the user selected the "Cancel" button.  After the dialog has been show, the `buttonPressed` property will contain the name of the button selected by the user.
 

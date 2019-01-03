@@ -8,12 +8,12 @@ The HTTP and HTTPResponse objects are used to run synchronous HTTP requests to c
 ### Instance Functions
 
 - **request(settings)** *-> {% ref HTTPResponse %}
-  - parameters:
+  - **Parameters:**
     - **settings** [object]: A javascript object supporting the following options:
       - *url* [string, required]: The HTTP URL to make the request.
       - *method* [string, required]: The HTTP method, like "GET", "POST", etc.
       - *headers* [object, optional]: An object contain key-values to be added as custom headers in the request.
-      - **parameters** [object, optional]: Query parameters to merge with the url. Query parameters can also be part of the original url value.
+      - *parameters* [object, optional]: Query parameters to merge with the url. Query parameters can also be part of the original url value.
       - *data* [object, optional]: An object containing data to be encoded into the HTTP body of the request.
       - *encoding* [string, optional]: Possible values:
         - *json*: Default. Encode data using JSON in request body.

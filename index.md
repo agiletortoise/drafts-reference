@@ -1,5 +1,5 @@
 ---
-title: Drafts Script Reference
+title: Drafts Reference
 ---
 
 Reference documentation and example scripts for use with Drafts 5 and greater.
