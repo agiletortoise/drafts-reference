@@ -5,7 +5,7 @@ category: object
 
 Reminder objects represent individual tasks in a list in the built-in Reminders app.
 
-#### Properties
+### Properties
 
 - **list** *[ReminderList]*
   - The list which this task resides in.
@@ -28,7 +28,7 @@ Reminder objects represent individual tasks in a list in the built-in Reminders 
 - **alarms** *[array of Alarms]*
   - The alarms assigned to the reminder, if any.
 
-#### Functions
+### Functions
 
 - **update()** *-> boolean*
   - Save the task. Returns true if the task is successfully saved in Reminders.
@@ -37,7 +37,7 @@ Reminder objects represent individual tasks in a list in the built-in Reminders 
 - **removeAlarms()**
   - Remove any assigned alarms from the reminder.
 
-#### Examples
+### Examples
 
 ```javascript
 var list = ReminderList.findOrCreate("Groceries");

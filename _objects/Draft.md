@@ -37,7 +37,7 @@ The Draft object represents a single draft.  When an action is run, the current 
 - **permalink** *[string, readonly]*
   - URL which can be used to open the draft.
 
-#### Instance Functions
+### Instance Functions
 
 - **update()**
   - save changes made to the draft to the database. _This must be called to save changes made during an action's execution._
@@ -48,13 +48,13 @@ The Draft object represents a single draft.  When an action is run, the current 
 - **hasTag(tag)** *-> boolean*
   - returns boolean indicating whether the tag is currently assigned to the draft.
 - **processTemplate(template)** *-> string*
-  - runs the passed template string through the template engine to evaluate tags (like `[[title]]`, `[[body]]`).
+  - runs the passed template string through the template engine to evaluate tags (like `[[title]]`, `[[body]]`). 
 - **setTemplateTag(tagName, value)**
   - set a custom tag value for use in templates. For example, calling `setTemplateTag("mytag", "mytext")` will create a tag `[[mytag]]`, which subsequent action step templates can use.
 - **getTemplateTag(tagName)** *-> string*
   - get the current value of a custom template tag.
 
-#### Class Functions
+### Class Functions
 
 - **create()** *-> draft object*
   - create a new draft object. This is an in-memory object only, unless "update()" is called to save the draft.
@@ -73,7 +73,7 @@ The Draft object represents a single draft.  When an action is run, the current 
 - **recentTags()** [array of strings]
   - Returns array of recently used tags. Helpful for building prompts to select tags.
 
-#### Examples
+### Examples
 
 ```javascript
 // create a new draft, assign content and save it

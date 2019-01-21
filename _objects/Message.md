@@ -5,7 +5,7 @@ category: object
 
 The Message object can be used to create and send mail iMessages, similar to those created by a "Message" action step.
 
-#### Properties
+### Properties
 
 - **toRecipients** *[array]*
   - Array of phone numbers and email addresses to use as "To:" recipients.
@@ -23,7 +23,7 @@ The Message object can be used to create and send mail iMessages, similar to tho
     - *userCancelled*: The user cancelled the Mail.app window without sending.
     - *unknownError*: An unknown error occurred.
 
-#### Functions
+### Functions
 
 - **send()** *-> boolean*
   - Send the message.  This will open the Messages.app sending window. Returns true if the message was sent successfully or false if not - if, for example, the user cancelled the mail window.
@@ -33,7 +33,7 @@ The Message object can be used to create and send mail iMessages, similar to tho
 - **create()** -> Message object
   - create a new object.
 
-#### Examples
+### Examples
 
 ```javascript
 var msg = Message.create();

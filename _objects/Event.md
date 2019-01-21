@@ -5,7 +5,7 @@ category: object
 
 Event object represent individual calendar events.
 
-#### Instance Properties
+### Instance Properties
 
 - **calendar** *[{% ref Calendar %}]*
   - The calendar which this event resides in.
@@ -32,7 +32,7 @@ Event object represent individual calendar events.
 - **lastError** *[string]*
   - If a function fails, this property will contain the last error as a string message, otherwise it will be undefined.
 
-#### Instance Functions
+### Instance Functions
 
 - **update()** *-> boolean*
   - Save the event. Returns true if the event is successfully saved in Calendars.
@@ -43,7 +43,7 @@ Event object represent individual calendar events.
 - **removeAllAlarms()**
   - Remove any assigned alarms from the event.
 
-#### Examples
+### Examples
 
 ```javascript
 var calendar = Calendar.findOrCreate("Activities");

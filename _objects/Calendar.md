@@ -5,7 +5,7 @@ category: object
 
 Calendar objects are used to manipulate and create calendars in the built-in Calendars app and its associated accounts.
 
-#### Properties
+### Properties
 
 - **title** *[string]*
   - The name of the list.
@@ -14,7 +14,7 @@ Calendar objects are used to manipulate and create calendars in the built-in Cal
 - **isImmutable** *[boolean]*
   - A Boolean value indicating whether the calendar’s properties can be edited or deleted.
 
-#### Instance Functions
+### Instance Functions
 
 - **update()** *-> boolean*
   - Save changes to the calendar.
@@ -23,7 +23,7 @@ Calendar objects are used to manipulate and create calendars in the built-in Cal
 - **events(startDate, endDate)** *-> [array of [Events](/objects/event)]*
   - Returns array of events on the calendar between the start and end dates specified.
 
-#### Class Functions
+### Class Functions
 
 - **findOrCreate(title)** *-> Calendar*
   - Searches for a calendar matching the title.  If none is found, creates a new list with that title in your default calendars account.  If more than one calendar with the same name exist in Calendars, the first found will be returned.

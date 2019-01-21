@@ -5,7 +5,7 @@ category: object
 
 ReminderList objects are used to manipulate and create lists in the built-in Reminders app.
 
-#### Properties
+### Properties
 
 - **title** *[string]*
   - The name of the list.
@@ -16,14 +16,14 @@ ReminderList objects are used to manipulate and create lists in the built-in Rem
 - **completeTasks** *[array of Reminders, readonly]*
   - Reminders in the list which have been marked completed.
 
-#### Instance Functions
+### Instance Functions
 
 - **update()** *-> boolean*
   - Save changes to the list.
 - **createReminder()** *-> Reminder*
   - Create a new Reminder object in this list.
 
-#### Class Functions
+### Class Functions
 
 - **findOrCreate(title)** *-> ReminderList*
   - Searches for a list in the reminders app matching the title.  If none is found, creates a new list with that title.  If more than one list with the same name exist in Reminders, the first found will be returned.
@@ -34,7 +34,7 @@ ReminderList objects are used to manipulate and create lists in the built-in Rem
 - **default()** *ReminderList*
   - Returns the system default reminder list configured for new reminders.
 
-#### Examples
+### Examples
 
 ```javascript
 var list = ReminderList.findOrCreate("Groceries");

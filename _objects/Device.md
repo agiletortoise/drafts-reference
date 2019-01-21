@@ -5,7 +5,7 @@ category: object
 
 Drafts defines a single global "device" object which provides access to information about the current device.
 
-#### Instance Properties
+### Instance Properties
 
 - **model** *[string]*
 	- Model of current device. For example, "iPhone", "iPad".
@@ -16,7 +16,7 @@ Drafts defines a single global "device" object which provides access to informat
 - **batteryLevel** *[number]*
   - Current battery level as a number between 0.0 and 1.0
 
-#### Examples
+### Examples
 
 ```javascript
 // get system info from device object

@@ -5,7 +5,7 @@ category: object
 
 HTTPResponse objects are returned by calls to [HTTP]({{ site.baseurl }}/objects/HTTP) methods.
 
-#### Instance Properties
+### Instance Properties
 
 - **success** [boolean]: true/false for whether the request was completed successfully.
 - **statusCode** [number]: The HTTP status code (like 200, 301, etc.) returned.

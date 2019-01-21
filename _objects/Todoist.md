@@ -29,7 +29,7 @@ If an API calls fails, typically the result will be an `undefined` value, and th
     - **reminder** *[string, optional]*: Optional natural language date specifying for creating a task reminder.
   - See [Todoist method reference for supported options and return](https://developer.todoist.com/sync/v7/#quick)
 
-#### Tasks
+### Tasks
 
 - **getTasks(options)** -> *[array of objects]*
   - See [Todoist method reference for supported options and return values](http://doist.github.io/todoist-api/rest/v8/#get-tasks)
@@ -44,7 +44,7 @@ If an API calls fails, typically the result will be an `undefined` value, and th
 - **reopenTask(task_id)** -> *[boolean]*
   - Reopen task (mark incomplete)
 
-#### Projects
+### Projects
 
 - **getProjects()** -> *[array of objects]*
   - See [Todoist method reference for supported options and return values](http://doist.github.io/todoist-api/rest/v8/#get-all-projects)
@@ -55,7 +55,7 @@ If an API calls fails, typically the result will be an `undefined` value, and th
 - **updateProject(project_id, options)** -> *[object]*
   - See [Todoist method reference for supported options and return values](http://doist.github.io/todoist-api/rest/v8/#update-a-project)
 
-#### Comments
+### Comments
 
 - **getComments(options)** -> *[array of objects]*
   - See [Todoist method reference for supported options and return values](http://doist.github.io/todoist-api/rest/v8/#get-all-comments)
@@ -66,7 +66,7 @@ If an API calls fails, typically the result will be an `undefined` value, and th
 - **updateComment(comment_id, options)** -> *[object]*
   - See [Todoist method reference for supported options and return values](http://doist.github.io/todoist-api/rest/v8/#update-a-comment)
 
-#### Labels
+### Labels
 
 - **getLabels()** -> *[array of objects]*
   - See [Todoist method reference for supported options and return values](http://doist.github.io/todoist-api/rest/v8/#get-all-labels)

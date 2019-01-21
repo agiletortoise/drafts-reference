@@ -5,7 +5,7 @@ category: object
 
 The Mail object can be used to create and send mail messages, similar to those created by a "Mail" action step.
 
-#### Instance Properties
+### Instance Properties
 
 - **toRecipients** *[array]*
   - Array of email addresses to use as "To:" recipients.
@@ -34,7 +34,7 @@ The Mail object can be used to create and send mail messages, similar to those c
     - *serviceError*: Background mail service returned an error.
     - *unknownError*: An unknown error occurred.
 
-#### Functions
+### Functions
 
 - **send()** *-> boolean*
   - Send the mail message.  This will open the Mail.app sending window. Returns true if the message was sent successfully or false if not - if, for example, the user cancelled the mail window.
@@ -44,7 +44,7 @@ The Mail object can be used to create and send mail messages, similar to those c
 - **create()** -> Mail object
   - create a new object.
 
-#### Examples
+### Examples
 
 ```javascript
 var mail = Mail.create();

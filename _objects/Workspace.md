@@ -24,7 +24,7 @@ Represents a Workspace. Can be used to inquire and load workspaces and apply the
 - **inboxIncludesFlagged** *[boolean]*
   - Should flagged drafts be included in inbox
 
-#### Instance Functions
+### Instance Functions
 
 - **update()**
   - Save changes made to the workspace to the database. This must be called to save changes.

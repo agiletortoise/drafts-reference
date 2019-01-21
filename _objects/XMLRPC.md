@@ -9,7 +9,7 @@ It will also return faults parsed to error messages in the response if necessary
 
 This object is suitable for communication with a number of popular XML-RPC interfaces, including the [MetaWeblog API](http://xmlrpc.scripting.com/metaWeblogApi.html). WordPress also offers it's own XML-RPC interface, which can be used via this object, or the convenience wrapper {% ref WordPress %} object.
 
-#### Class functions
+### Class functions
 
 - **request(url, methodName, params)** _-> XMLRPCResponse_
   - Make an XML-RPC request.
@@ -18,7 +18,7 @@ This object is suitable for communication with a number of popular XML-RPC inter
     - **methodName** _[string]_: Name of the method to call. Supported values are specific to the services provided by the host.
     - **params** _[array of values]_: The parameters to pass to the request. This should be an array of values, in the proper order, as specified by the documentation of the host being called. This array will be encoded into XML-RPC parameters in XML format by the method - only raw javascript values should be provided.
 
-#### Examples
+### Examples
 
 ```javascript
 // DEMO of XML-RPC

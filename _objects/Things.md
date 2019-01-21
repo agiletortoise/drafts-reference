@@ -11,7 +11,7 @@ For more information about what values Things understands in these objects, refe
 
 ## Objects
 
-#### TJSContainer
+### TJSContainer
 
 Wraps an array of todo and/or project items and encodes them into a URL for use to send the request to Things.
 
@@ -21,7 +21,7 @@ Wraps an array of todo and/or project items and encodes them into a URL for use 
 - Properties
   - **url** *[string]*
 
-#### TJSProject
+### TJSProject
 
 Represents a Things project, with headings and todo items.
 
@@ -42,7 +42,7 @@ Represents a Things project, with headings and todo items.
   - **addTodo(TJSTodo)**
   - **addHeading(TJSHeading)**
 
-#### TJSHeading
+### TJSHeading
 
 Represents a Things heading within a project.
 
@@ -52,7 +52,7 @@ Represents a Things heading within a project.
   - **title** *[string]*
   - **archived** *[boolean]*
 
-#### TJSTodo
+### TJSTodo
 
 Represents a Things todo item. Todos can be added a project or directly to a container.
 
@@ -73,7 +73,7 @@ Represents a Things todo item. Todos can be added a project or directly to a con
   - **addChecklistItem(TJSChecklistItem)**
   - **addTag(string)**
 
-#### TJSChecklistItem
+### TJSChecklistItem
 
 Represents a Things check list item, which can be added to a Todo.
 
@@ -84,7 +84,7 @@ Represents a Things check list item, which can be added to a Todo.
   - **completed** *[boolean]*
   - **canceled** *[boolean]*
 
-#### Examples
+### Examples
 
 ```javascript
 // create a Things Project

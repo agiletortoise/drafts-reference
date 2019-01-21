@@ -5,7 +5,7 @@ category: object
 
 Drafts defines a single global "app" object which provides access to application level functions.
 
-#### Instance Properties
+### Instance Properties
 
 - **version** *[string, readonly]*
 	- Version number of current installation of Drafts.
@@ -21,7 +21,7 @@ Drafts defines a single global "app" object which provides access to application
 - **isIdleDisabled** *[boolean]*
 	- Is system sleep timer disabled preventing screen dimming/sleep.
 
-#### Instance Functions
+### Instance Functions
 
 - **openURL(url, useSafari)** *-> boolean*
   - opens URL passed using iOS. Returns true if URL was opened, false if the URL was invalid or no available app can open the URL on the device. The second, optional useSafari is a true/false flag to open the URL in Safari View Controller.

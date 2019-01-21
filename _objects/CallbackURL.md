@@ -26,7 +26,7 @@ CallbackURL objects can be used to open x-callback-url requests and wait for a r
 - **callbackResponse** *[object]*
   - An object contain and URL query parameters returned by the target app along with it's callback response. For example, if the target app called x-success with the query parameters `result=MyTestText`, callbackResponse would contain `{"result": "MyTestText"}`.
 
-### Functions
+### Instance Functions
 
 - **open()** *-> boolean*
   - Opens the URL with associated parameters, and waits for a callback response. Returns true if an x-success response was received from the target app, otherwise false. If false, use the "status" property to determine the type of failure.

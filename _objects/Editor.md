@@ -9,7 +9,7 @@ Typically scripting actions that work like custom keyboard commands and similar 
 
 **NOTE:** _Generally speaking, editor methods are best used for quick text manipulations of the type used in the extended keyboard. Most substantial updates to draft content are better applied using the `draft` object._
 
-#### Instance Properties
+### Instance Properties
 
 - **focusModeEnabled** *[boolean]*
   - Access or set current focus mode status.
@@ -18,7 +18,7 @@ Typically scripting actions that work like custom keyboard commands and similar 
 - **isActive** *[boolean]*
   - Is editor current focused for editing.
 
-#### Instance Functions
+### Instance Functions
 
 - **new()**
   - Creates a new blank draft and loads it into the editor.
@@ -63,7 +63,7 @@ Typically scripting actions that work like custom keyboard commands and similar 
 - **setTextInRange(number, number, string)**
   - Replace the text in the passed range with new text.
 
-#### Examples
+### Examples
 
 ```javascript
 var sel = editor.getSelectedText(); // retrieve selected text

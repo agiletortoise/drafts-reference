@@ -5,14 +5,14 @@ category: object
 
 Alarms are alerts which can be attached to Reminder and Event objects.
 
-#### Class Functions
+### Class Functions
 
 - **alarmWithDate(date)** *-> Alarm*
   - Alarm set to remind at a specific date/time.
 - **alarmWithOffset(seconds)** *-> Alarm*
   - Alarm set to remind at a specific number of seconds relative to the start date of the event. *Note that alarms created with this methods are only supported on calendar events, not reminders.*
 
-#### Examples
+### Examples
 
 ```javascript
 var list = ReminderList.findOrCreate("Errands");
