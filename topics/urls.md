@@ -15,33 +15,33 @@ All URLs should be proper valid URLs with URL encoded values in query arguments.
 
 ## Supported Actions
 
-### /create
+### /create {% platforms all %}
 
 Create a new draft with the content passed in the "text" argument. If an x-success url is provided, it will be called the `uuid` parameter indicating the UUID of the draft which was created.
 
 - **Arguments**
   - **text** *[string, required]* : Text to be used at the content of the new draft.
   - **tag** *[string]* : Name of a tag to attach to the draft. Parameter can appear multiple times to add more than one tag.
-  - **action** *[string, optional]* : Name of an action in the action list. If provided, this action will be run on the specified draft.
+  - {% platforms ios %} **action** *[string, optional]* : Name of an action in the action list. If provided, this action will be run on the specified draft.
   - **allowEmpty** *[boolean, optional]* : If an action parameter is provided, adding `allowEmpty=false` to the URL will prevent that action from running if the text is empty. This can be used to terminate a loop of x-callback-urls running on lines of a draft.
   - **retParam** *[string, optional]* : The name of the argument to use to pass the draft UUID back to the x-success URL.  Defaults to "uuid", but if the requesting app expects another value (like Workflow's "input") use this argument to override.
 - **Examples**
   - `drafts5://x-callback-url/create?text=Hello%20World`
     - Create new draft with the content "Hello World"
 
-### /open
+### /open {% platforms all %}
 
 Open an existing draft based on the UUID argument.
 
 - **Arguments**
   - **uuid** *[string, required]* : The UUID identifier for a draft.
-  - **action** *[string, optional]* : Name of an action in the action list. If provided, this action will be run on the specified draft.
+  - {% platforms ios %} **action** *[string, optional]* : Name of an action in the action list. If provided, this action will be run on the specified draft.
   - **allowEmpty** *[boolean, optional]* : If an action parameter is provided, adding `allowEmpty=false` to the URL will prevent that action from running if the text is empty. This can be used to terminate a loop of x-callback-urls running on lines of a draft.
 - **Examples**
   - `drafts5://x-callback-url/open?uuid=UUID-TO-VALID-DRAFT`
     - Open the draft in the editor with the UUID provided.
 
-### /get
+### /get {% platforms all %}
 
 Return the current content of the draft specified by the UUID argument as an argument to the x-success URL provided.
 
@@ -52,35 +52,35 @@ Return the current content of the draft specified by the UUID argument as an arg
   - `drafts5://x-callback-url/get?uuid=UUID-TO-VALID-DRAFT&x-success=APP-URL`
     - Retrieves the content of the identified draft, and calls the x-success URL with the argument `text=DRAFT-CONTENT` added.
 
-### /prepend
+### /prepend {% platforms all %}
 
 Prepend the passed text to the beginning of a draft identified by the UUID argument.
 
 - **Arguments**
   - **uuid** *[string, required]* : The UUID identifier for a draft.
   - **text** *[string, required]* : Text to add.
-  - **action** *[string, optional]* : Name of an action in the action list. If provided, this action will be run on the specified draft.
+  - {% platforms ios %} **action** *[string, optional]* : Name of an action in the action list. If provided, this action will be run on the specified draft.
   - **allowEmpty** *[boolean, optional]* : If an action parameter is provided, adding `allowEmpty=false` to the URL will prevent that action from running if the text is empty. This can be used to terminate a loop of x-callback-urls running on lines of a draft.
   - **tag** *[string]* : Name of a tag to attach to the draft. Parameter can appear multiple times to add more than one tag.
 - **Examples**
   - `drafts5://x-callback-url/prepend?uuid=UUID-TO-VALID-DRAFT&text=TEXT-TO-ADD`
     - Adds "TEXT-TO-ADD" to the beginning of the draft.
 
-### /append
+### /append {% platforms all %}
 
 Append the passed text to the end of a draft identified by the UUID argument.
 
 - **Arguments**
   - **uuid** *[string, required]* : The UUID identifier for a draft.
   - **text** *[string, required]* : Text to add.
-  - **action** *[string, optional]* : Name of an action in the action list. If provided, this action will be run on the specified draft.
+  - {% platforms ios %} **action** *[string, optional]* : Name of an action in the action list. If provided, this action will be run on the specified draft.
   - **allowEmpty** *[boolean, optional]* : If an action parameter is provided, adding `allowEmpty=false` to the URL will prevent that action from running if the text is empty. This can be used to terminate a loop of x-callback-urls running on lines of a draft.
   - **tag** *[string]* : Name of a tag to attach to the draft. Parameter can appear multiple times to add more than one tag.
 - **Examples**
   - `drafts5://x-callback-url/append?uuid=UUID-TO-VALID-DRAFT&text=TEXT-TO-ADD`
     - Adds "TEXT-TO-ADD" to the end of the draft.
 
-### /replaceRange
+### /replaceRange {% platforms all %}
 
 Replace content in an existing draft, based on a range.
 
@@ -90,11 +90,11 @@ Replace content in an existing draft, based on a range.
   - **start** *[integer, required]* : Start position of the range to replace.
   - **length** *[integer, required]* : Number of characters in the range to replace.
 - **Examples**
-  - `drafts4://x-callback-url/replaceRange?uuid=UUID-TO-VALID-DRAFT&text=TEXT-TO-INSERT&start=0&length=10
+  - `drafts5://x-callback-url/replaceRange?uuid=UUID-TO-VALID-DRAFT&text=TEXT-TO-INSERT&start=0&length=10
 `
     - Open the draft and replace characters 0 through 10 with TEXT-TO-INSERT.
 
-### /search
+### /search {% platforms all %}
 
 Open drafts directly to the draft search field.
 
@@ -104,7 +104,7 @@ Open drafts directly to the draft search field.
 - **Examples**
   - `drafts5://x-callback-url/search?query=QUERY-TEXT`
 
-### /workspace
+### /workspace {% platforms all %}
 
 Open drafts directly the draft list with a named workspace selected.
 
@@ -113,7 +113,7 @@ Open drafts directly the draft list with a named workspace selected.
 - **Examples**
   - `drafts5://x-callback-url/workspace?name=WORKSPACE-NAME`
 
-### /loadActionGroup
+### /loadActionGroup {% platforms ios %}
 
 Load an action group in the action list side panel.
 
@@ -122,7 +122,7 @@ Load an action group in the action list side panel.
 - **Examples**
   - `drafts5://x-callback-url/loadActionGroup?name=WORKSPACE-NAME`
 
-### /loadKeyboardActionGroup
+### /loadKeyboardActionGroup {% platforms ios %}
 
 Load an action group in the extended keyboard row.
 
@@ -131,7 +131,7 @@ Load an action group in the extended keyboard row.
 - **Examples**
   - `drafts5://x-callback-url/loadKeyboardActionGroup?name=WORKSPACE-NAME`
 
-### /runAction
+### /runAction {% platforms ios %}
 
 Run a drafts action on the passed text without saving that text to a draft.
 
@@ -145,7 +145,7 @@ Run a drafts action on the passed text without saving that text to a draft.
   - `drafts5://x-callback-url/runAction?text=TEXT&action=VALID-ACTION-NAME`
     - If found, runs the VALID-ACTION-NAME action on an unsaved draft containing "TEXT".
 
-### /dictate
+### /dictate {% platforms ios %}
 
 Open Drafts dictation interface. Pass the resulting dictated text to the x-success URL instead of saving it in Drafts.
 
@@ -156,7 +156,7 @@ Open Drafts dictation interface. Pass the resulting dictated text to the x-succe
   - `drafts5://x-callback-url/dictate?x-success=APP-URL`
     - Retrieves the content of the identified draft, and calls the x-success URL with the argument `text=DICTATED-TEXT` added.
 
-### /arrange
+### /arrange {% platforms ios %}
 
 Open Drafts arrange interface. Pass the resulting arranged text to the x-success URL instead of saving it in Drafts.
 

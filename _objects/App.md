@@ -14,6 +14,10 @@ Drafts defines a single global "app" object which provides access to application
 		- **light**
 		- **dark**
 		- **automatic**
+- **currentThemeMode** *[string, readonly]*
+	- Returns the active theme mode, light or dark, taking into account automatic switching of themes if active. If writing scripts to branch logic based on the current mode, this is the best property to use.
+		- **light**
+		- **dark**
 - **isDraftListVisible** *[boolean, readonly]*
 	- Is the draft list side panel is visible.
 - **isActionListVisible** *[boolean, readonly]*

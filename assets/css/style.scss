@@ -339,6 +339,26 @@ a.pro {
   border-radius: 8px;
   text-decoration: none;
 }
+
+a.platform {
+  background-color: #bbbbbb;
+  color: white;
+  font-size: .75em;
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: 8px;
+  text-decoration: none;
+  &.available {
+      background-color: #258d25;
+  }
+}
+a.available::after {
+    content: " \2713";
+}
+a.unavailable::after {
+    content: " \2717";
+}
+
 ul {
   >li {
     >p {
