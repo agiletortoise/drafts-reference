@@ -1,14 +1,16 @@
 ---
 ---
-
 $documentation-color: #275488;
 $action-directory-color: #358035;
 $community-color: #76363A;
 $reference-color: #6B6E74;
 $search-color: #354967;
-
-html, button, input, select, textarea,
-    .pure-g [class *= "pure-u"] {
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class *="pure-u"] {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 0.9em;
 }
@@ -22,9 +24,11 @@ body {
     height: auto;
 }
 
+
 /*
 Add transition to containers so they can push in and out.
 */
+
 #layout,
 #menu,
 .menu-link {
@@ -39,35 +43,43 @@ Add transition to containers so they can push in and out.
 /*
 This is the parent `<div>` that contains the menu and the content area.
 */
+
 #layout {
     position: relative;
     left: 0;
     padding-left: 0;
 }
-    #layout.active #menu {
-        left: 150px;
-        width: 150px;
-    }
 
-    #layout.active .menu-link {
-        left: 150px;
-    }
+#layout.active #menu {
+    left: 150px;
+    width: 150px;
+}
+
+#layout.active .menu-link {
+    left: 150px;
+}
+
+
 /*
 The content `<div>` is where all your content goes.
 */
+
 .content {
     margin: 0 1em 0 1em;
     padding: 0 .5em;
     max-width: 800px;
     margin-bottom: 50px;
     line-height: 1.5em;
-
     ul {
-      padding: 0 1em;
+        padding: 0 1em;
     }
-
-    h1,h2,h3,h4,h5,h6 {
-      color: maroon;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: maroon;
     }
 }
 
@@ -81,23 +93,25 @@ The content `<div>` is where all your content goes.
 }
 
 .header {
-     margin: 0 1em 0 1em;
-     color: #333;
-     text-align: left;
-     padding: 1em 2em 0 .5em;
-     border-bottom: 1px solid #eee;
- }
-    .header h1 {
-        margin: 0.2em 0;
-        font-size: 2.25em;
-        font-weight: 500;
-    }
-     .header h2 {
-        font-weight: 300;
-        color: #ccc;
-        padding: 0;
-        margin-top: 0;
-    }
+    margin: 0 1em 0 1em;
+    color: #333;
+    text-align: left;
+    padding: 1em 2em 0 .5em;
+    border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+    margin: 0.2em 0;
+    font-size: 2.25em;
+    font-weight: 500;
+}
+
+.header h2 {
+    font-weight: 300;
+    color: #ccc;
+    padding: 0;
+    margin-top: 0;
+}
 
 .content-subhead {
     margin: 50px 0 20px 0;
@@ -106,202 +120,229 @@ The content `<div>` is where all your content goes.
 }
 
 
-
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page.
 */
 
 #menu {
-    margin-left: -150px; /* "#menu" width */
+    margin-left: -150px;
+    /* "#menu" width */
     width: 150px;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 1000; /* so the menu or its navicon stays above all content */
+    z-index: 1000;
+    /* so the menu or its navicon stays above all content */
     background: #202D40;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
-    /*
+
+
+/*
     All anchors inside the menu should be styled like this.
     */
-    #menu a {
-        color: #999;
-        border: none;
-        padding: 0.6em 0 0.6em 0.6em;
-    }
 
-    /*
+#menu a {
+    color: #999;
+    border: none;
+    padding: 0.6em 0 0.6em 0.6em;
+}
+
+
+/*
     Remove all background/borders, since we are applying them to #menu.
     */
-     #menu .pure-menu,
-     #menu .pure-menu ul {
-        border: none;
-        background: transparent;
-    }
 
-    /*
+#menu .pure-menu,
+#menu .pure-menu ul {
+    border: none;
+    background: transparent;
+}
+
+
+/*
     Add that light border to separate items into groups.
     */
-    #menu .pure-menu ul,
-    #menu .pure-menu .menu-item-divided {
-        border-top: 1px solid #333;
-    }
-    #menu .menu-item-divided {
-      background-color: #333;
-      a {
+
+#menu .pure-menu ul,
+#menu .pure-menu .menu-item-divided {
+    border-top: 1px solid #333;
+}
+
+#menu .menu-item-divided {
+    background-color: #333;
+    a {
         color: #ddd;
         font-weight: bold;
-      }
     }
-        /*
+}
+
+
+/*
         Change color of the anchor links on hover/focus.
         */
-        #menu .pure-menu li a:hover,
-        #menu .pure-menu li a:focus {
-            background: #333;
-        }
 
-    /*
+#menu .pure-menu li a:hover,
+#menu .pure-menu li a:focus {
+    background: #333;
+}
+
+
+/*
     This styles the selected menu item `<li>`.
     */
-    #menu .pure-menu-selected,
-    #menu .pure-menu-heading {
-        background: $reference-color;
-    }
-        /*
+
+#menu .pure-menu-selected,
+#menu .pure-menu-heading {
+    background: $reference-color;
+}
+
+
+/*
         This styles a link within a selected menu item `<li>`.
         */
-        #menu .pure-menu-selected a {
-            color: #fff;
-        }
 
-    /*
+#menu .pure-menu-selected a {
+    color: #fff;
+}
+
+
+/*
     This styles the menu heading.
     */
-    #menu a.pure-menu-heading {
-        font-size: 1.1em;
-        color: #fff;
-        margin: 0;
-        text-align: center;
-        text-transform: none;
-        font-weight: normal;
-        padding: 0;
-    }
 
-    #menu a.object-link {
-      padding-left: 1.25em;
-      color: #efefef;
-    }
+#menu a.pure-menu-heading {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    text-transform: none;
+    font-weight: normal;
+    padding: 0;
+}
 
-    #menu .documentation {
-      background-color: $documentation-color;
-      a {
-        color: white;
-      }
-    }
+#menu a.object-link {
+    padding-left: 1.25em;
+    color: #efefef;
+}
 
-    #menu .action-directory {
-      background-color: $action-directory-color;
-      a {
+#menu .documentation {
+    background-color: $documentation-color;
+    a {
         color: white;
-      }
     }
-    #menu .community {
-      background-color: $community-color;
-      a {
+}
+
+#menu .action-directory {
+    background-color: $action-directory-color;
+    a {
         color: white;
-      }
     }
-    #menu .search {
-      background-color: $search-color;
+}
+
+#menu .community {
+    background-color: $community-color;
+    a {
+        color: white;
     }
+}
+
+#menu .search {
+    background-color: $search-color;
+}
+
 
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
 
 /*
 The button to open/close the Menu is custom-made and not part of Pure. Here's
 how it works:
 */
 
+
 /*
 `.menu-link` represents the responsive menu toggle that shows/hides on
 small screens.
 */
+
 .menu-link {
     position: fixed;
-    display: block; /* show this only on small screens */
+    display: block;
+    /* show this only on small screens */
     top: 0;
-    left: 0; /* "#menu width" */
+    left: 0;
+    /* "#menu width" */
     background: #000;
-    background: rgba(0,0,0,0.5);
-    font-size: 10px; /* change this value to increase/decrease button size */
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 10px;
+    /* change this value to increase/decrease button size */
     z-index: 10;
     width: 2em;
     height: auto;
     padding: 1.5em .6em;
 }
 
-    .menu-link:hover,
-    .menu-link:focus {
-        background: #000;
-    }
+.menu-link:hover,
+.menu-link:focus {
+    background: #000;
+}
 
-    .menu-link span {
-        position: relative;
-        display: block;
-    }
+.menu-link span {
+    position: relative;
+    display: block;
+}
 
-    .menu-link span,
-    .menu-link span:before,
-    .menu-link span:after {
-        background-color: #fff;
-        width: 100%;
-        height: 0.2em;
-    }
+.menu-link span,
+.menu-link span:before,
+.menu-link span:after {
+    background-color: #fff;
+    width: 100%;
+    height: 0.2em;
+}
 
-        .menu-link span:before,
-        .menu-link span:after {
-            position: absolute;
-            margin-top: -0.6em;
-            content: " ";
-        }
+.menu-link span:before,
+.menu-link span:after {
+    position: absolute;
+    margin-top: -0.6em;
+    content: " ";
+}
 
-        .menu-link span:after {
-            margin-top: 0.6em;
-        }
+.menu-link span:after {
+    margin-top: 0.6em;
+}
 
 
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
 
+
 /*
 Hides the menu at `48em`, but modify this based on your app's needs.
 */
-@media (min-width: 48em) {
 
+@media (min-width: 48em) {
     .header,
     .content,
     .footer {
         padding-left: 1em;
         padding-right: 1em;
     }
-
     #layout {
-        padding-left: 150px; /* left col width "#menu" */
+        padding-left: 150px;
+        /* left col width "#menu" */
         left: 0;
     }
     #menu {
         left: 150px;
     }
-
     .menu-link {
         position: fixed;
         left: 150px;
         display: none;
     }
-
     #layout.active .menu-link {
         left: 150px;
     }
@@ -321,119 +362,146 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 }
 
 div.doc-image {
-  width: 100%;
-  text-align: center;
-  margin: 1.5em 0;
-  img {
-    max-width:100%;
-  }
-  a { text-decoration: none; }
+    width: 100%;
+    text-align: center;
+    margin: 1.5em 0;
+    img {
+        max-width: 100%;
+    }
+    a {
+        text-decoration: none;
+    }
 }
 
 a.pro {
-  background-color: #5489EF;
-  color: white;
-  font-size: .7em;
-  font-weight: 500;
-  padding: 2px 6px;
-  border-radius: 8px;
-  text-decoration: none;
+    background-color: #5489EF;
+    color: white;
+    font-size: .7em;
+    font-weight: 500;
+    padding: 2px 6px;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 a.platform {
-  background-color: #bbbbbb;
-  color: white;
-  font-size: .75em;
-  font-weight: 500;
-  padding: 2px 6px;
-  border-radius: 8px;
-  text-decoration: none;
-  &.available {
-      background-color: #258d25;
-  }
+    background-color: #bbbbbb;
+    color: white;
+    font-size: .75em;
+    font-weight: 500;
+    padding: 2px 6px;
+    border-radius: 8px;
+    text-decoration: none;
+    &.available {
+        background-color: #258d25;
+    }
 }
+
 a.available::after {
     content: " \2713";
 }
+
 a.unavailable::after {
     content: " \2717";
 }
 
 ul {
-  >li {
-    >p {
-      margin: 0;
-      padding: 0;
+    >li {
+        >p {
+            margin: 0;
+            padding: 0;
+        }
     }
-  }
 }
 
 div.navigation {
-  margin: 1em 0em;
-  a {
-    text-decoration: none;
-    font-weight: bold;
-  }
+    margin: 1em 0em;
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }
 }
 
 div.pro-features {
-  >div {
-    display: table;
-
     >div {
-      vertical-align: top;
-      display: table-cell;
-      margin: 1.5em 0;
-      padding: .5em;
-      &.content {
-        padding: 1em 1em;
-        h2 {
-          margin: 0;
-          padding: 0;
+        display: table;
+        >div {
+            vertical-align: top;
+            display: table-cell;
+            margin: 1.5em 0;
+            padding: .5em;
+            &.content {
+                padding: 1em 1em;
+                h2 {
+                    margin: 0;
+                    padding: 0;
+                }
+                p {
+                    margin: 0;
+                    padding: .25em 0;
+                }
+            }
         }
-        p {
-          margin: 0;
-          padding: .25em 0;
-        }
-      }
     }
-  }
 }
+
 
 /**
  * Embed
  */
- .embed-container {
-   position: relative;
-   padding-bottom: 56.25%;
-   height: 0;
-   overflow: hidden;
-   max-width: 100%;
- }
- .embed-container iframe, .embed-container object, .embed-container embed {
-   position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 div.callout {
-  border: 1px dotted #ccc;
-  background-color: #efefef;
-  border-radius: 10px;
-  padding: .5em 1em;
-  margin: 1em 0;
-
-  h4 {
-    margin: 0;
-  }
-  p {
-    margin: .5em 0;
-  }
+    border: 1px dotted #ccc;
+    background-color: #efefef;
+    border-radius: 10px;
+    padding: .5em 1em;
+    margin: 1em 0;
+    h4 {
+        margin: 0;
+    }
+    p {
+        margin: .5em 0;
+    }
 }
 
 div.highlight {
-  padding: .25em 1em;
+    padding: .25em 1em;
 }
 
-
+div.app-store-logo {
+    background: #aaaaaa;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1px 0px 1.5px 0;
+    margin: .5em .5em .5em 0;
+    a {
+        text-decoration: none;
+        color: #eeeeee;
+        font-size: 1.1em;
+        margin: 0
+    }
+    span {
+        padding: 0 .4em 0 .75em;
+    }
+}
 
 // #object-nav {
 //   position: absolute;
