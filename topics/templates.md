@@ -6,6 +6,13 @@ title: Templates and Tags
 
 Drafts has a lightweight template engine to allow control over how text is output in action steps. Templates are used for most values in action steps, so can be used to not only create the content of an exported file, or mail message, but to dynamically create the file name and folder, assign tags, insert timestamps and more, when an action is run.
 
+<div class="platform-note">
+<h4>Learning Templates</h4>
+<div>
+New to templates and want to learn more, see our <a href="https://forums.getdrafts.com/t/using-drafts-templates/3728"><em>Using Drafts Templates</em></a> article on the community forums.
+</div>
+</div>
+
 ### Content Tags
 
 - `[[draft]]` The full text of the draft.

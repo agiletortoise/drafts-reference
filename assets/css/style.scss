@@ -485,6 +485,24 @@ div.highlight {
     padding: .25em 1em;
 }
 
+div.platform-note {
+    border-radius: 3px;
+    padding: 0;
+    margin: 1em 2em;
+    h4 {
+        margin: 2px 0;
+        padding: .15em .5em;
+        background: #52627A;
+        color: white;
+        border-radius: 3px;
+    }
+    div {
+        padding: .25em .5em;
+        background: #efefef;
+        border-radius: 3px;
+    }
+}
+
 div.app-store-logo {
     background: #aaaaaa;
     border-radius: 6px;

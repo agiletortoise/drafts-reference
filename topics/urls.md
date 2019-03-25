@@ -9,6 +9,8 @@ Drafts implements URL actions based on [the x-callback-url specification](http:/
 
 - `drafts5://x-callback-url/[actionName]?[queryParameters]`
 
+Note that the `x-callback-url` host is optional in all `drafts5` URLs. It is supported for consistency with the specification, but functionally it is not required and `drafts5://[actionName]...` will have the same result as `drafts5://x-callback-url/[actionName]...`
+
 All URLs should be proper valid URLs with URL encoded values in query arguments. With a few exceptions, all actions support x-callback-url x-success, x-error and x-cancel arguments where appropriate.
 
 *NOTE: Some URL scheme parameters and actions require a Pro subscription.* {% include pro.html %}
