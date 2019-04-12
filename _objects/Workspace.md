@@ -23,6 +23,8 @@ Represents a Workspace. Can be used to inquire and load workspaces and apply the
   - Show last logged action for draft in list.
 - **inboxIncludesFlagged** *[boolean]*
   - Should flagged drafts be included in inbox
+- **archiveIncludesFlagged** *[boolean]*
+  - Should flagged drafts be included in archive
 
 ### Instance Functions
 
@@ -45,6 +47,12 @@ Represents a Workspace. Can be used to inquire and load workspaces and apply the
     - **sortFlaggedToTop** _[boolean]_: If true, sort flagged to beginning of results. Default: false
 - **setArchiveSort(sortBy, sortDescending, sortFlaggedToTop)**
   - Set sort order for archive.
+  - **Parameters**
+    - **sortBy** _[string]_: Sort by. Allowed values: "created", "modified", "accessed", "name".
+    - **sortDescending** _[boolean]_: If true, sort in descending order.
+    - **sortFlaggedToTop** _[boolean]_: If true, sort flagged to beginning of results. Default: false
+- **setAllSort(sortBy, sortDescending, sortFlaggedToTop)**
+  - Set sort order for "all" drafts folder.
   - **Parameters**
     - **sortBy** _[string]_: Sort by. Allowed values: "created", "modified", "accessed", "name".
     - **sortDescending** _[boolean]_: If true, sort in descending order.
