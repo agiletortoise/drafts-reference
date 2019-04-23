@@ -14,7 +14,7 @@ The Draft object represents a single draft.  When an action is run, the current 
 - **title** *[string, readonly]*
   - The title. This is generally the first line of the draft.
 - **languageGrammar** *[string]*
-  - The preferred language grammar (syntax) to use for the draft. Must be a recognized value, like "Plain Text", "Markdown", "Taskpaper", "JavaScript", "Simple List", exactly matching (case-sensitive) the syntax name as displayed in Drafts.
+  - The preferred language grammar (syntax) to use for the draft. Must be a recognized value, like "Plain Text", "Markdown", "Taskpaper", "JavaScript", "Simple List", "MultiMarkdown", "GitHub Markdown", exactly matching (case-sensitive) the syntax name as displayed in Drafts.
 - **selectionStart** *[number, readonly]*
   - The index location in the string of the beginning of the last text selection.
 - **selectionLength** *[number, readonly]*
@@ -60,7 +60,7 @@ The Draft object represents a single draft.  When an action is run, the current 
   - create a new draft object. This is an in-memory object only, unless "update()" is called to save the draft.
 - **find(uuid)** *-> draft object*
   - find an existing draft based on UUID.
-- **query(queryString, filter, tags, omitTags, sort, sortDescending)** *-> [array of drafts]*
+- **query(queryString, filter, tags, omitTags, sort, sortDescending, sortFlaggedToTop)** *-> [array of drafts]*
   - perform a search for drafts and return an array of matching draft objects.
   - **Parameters**
     - **queryString** _[string]_: Search string, as you would type in the search box in the draft list. Will find only drafts with a matching string in their contents. Use empty string ("") not to filter.

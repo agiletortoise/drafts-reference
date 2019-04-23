@@ -24,7 +24,9 @@ OneDrive objects can be used to work with files in a OneDrive account.
 ### Class Functions
 
 - **create(identifier)** *-> OneDrive*
-  - Creates a new OneDrive object. Identifier is a optional string value used to identify a OneDrive account.  Typically this can be omitted if you only work with one OneDrive account in Drafts.
+  - Creates a new OneDrive object. 
+  - **Parameters**
+    - **identifier** _[string]_: Optional identifier for Gmail account to use. This string is an arbitrary value, but we recommend using the email address you wish to associate with the script. Each unique identifier will be associated with its own [Credential](https://getdrafts.com/settings/credentials).
 
 ### Examples
 
