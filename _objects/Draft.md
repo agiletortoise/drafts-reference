@@ -36,6 +36,8 @@ The Draft object represents a single draft.  When an action is run, the current 
 - **modifiedAt** *[date, readonly]*
 - **permalink** *[string, readonly]*
   - URL which can be used to open the draft.
+- **versions** *[array of {% ref Version %} objects]
+  - Version history of draft as an array of Version objects.
 
 ### Instance Functions
 
@@ -53,6 +55,8 @@ The Draft object represents a single draft.  When an action is run, the current 
   - set a custom tag value for use in templates. For example, calling `setTemplateTag("mytag", "mytext")` will create a tag `[[mytag]]`, which subsequent action step templates can use.
 - **getTemplateTag(tagName)** *-> string*
   - get the current value of a custom template tag.
+- **saveVersion()**
+  - add a version to the version history with current content of draft.
 
 ### Class Functions
 

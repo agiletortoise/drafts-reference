@@ -20,7 +20,7 @@ Calendar objects are used to manipulate and create calendars in the built-in Cal
   - Save changes to the calendar.
 - **createEvent()** *-> {% ref Event %}*
   - Create a new Event object in this calendar.
-- **events(startDate, endDate)** *-> [array of [Events](/objects/event)]*
+- **events(startDate, endDate)** *-> [array of {% ref Event %} objects]*
   - Returns array of events on the calendar between the start and end dates specified.
 
 ### Class Functions
