@@ -21,6 +21,5 @@ reminder.title = "Get more paper towels";
 
 var alarm = Alarm.alarmWithDate((3).days().fromNow());
 reminder.addAlarm(alarm);
-
 reminder.update();
 ```

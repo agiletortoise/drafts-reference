@@ -168,3 +168,7 @@ Open Drafts arrange interface. Pass the resulting arranged text to the x-success
 - **Examples**
   - `drafts5://x-callback-url/arrange?x-success=APP-URL`
     - Retrieves the content of the identified draft, and calls the x-success URL with the argument `text=ARRANGED-TEXT` added.
+
+### /refresh_text_expander {% platforms ios %}
+
+Convenience command which immediately launches TextExpander to trigger a refresh of the TextExpander snippet library. Note that this URL does not support callbacks.

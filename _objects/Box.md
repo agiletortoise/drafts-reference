@@ -29,14 +29,14 @@ Box objects can be used to work with files in a Box.com account.
 ### Examples
 
 ```javascript
-// create OneDrive object
+// create Box object
 var drive = Box.create();
 
 // setup variables
 var path = "/test/file.txt";
 var content = "text to place in file";
 
-// write to file on OneDrive
+// write to file on Box
 var success = drive.write(path, content, false);
 
 if (success) { // write worked!
