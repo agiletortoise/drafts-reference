@@ -1,6 +1,8 @@
 ---
 title: Console
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/console
 ---
 
 For consistency with other Javascript environments, Drafts implements the "console.log" method to output to a log.

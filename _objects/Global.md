@@ -1,6 +1,8 @@
 ---
 title: Global
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/global
 ---
 
 ### Functions

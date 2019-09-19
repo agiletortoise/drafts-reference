@@ -1,6 +1,8 @@
 ---
 title: Alarm
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/alarm
 ---
 
 Alarms are alerts which can be attached to Reminder and Event objects.

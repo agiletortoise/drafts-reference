@@ -1,6 +1,8 @@
 ---
 title: WordPress
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/wordpress
 ---
 
 Script integration with [WordPress](http://wordpress.org) sites via the [WordPress XML-RPC API](https://codex.wordpress.org/XML-RPC_WordPress_API). Currently this object has one `runMethod` function which can be used to call any method available in the XML-RPC interface.

@@ -1,6 +1,8 @@
 ---
 title: GitHubMarkdown
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/githubmarkdown
 ---
 
 Drafts includes Discount-based, GitHub flavored Markdown parser based on [GHMarkdownParser](https://github.com/OliverLetterer/GHMarkdownParser). For details on the meaning of the various options, refer to [Markdown documentation](https://getdrafts.com/settings/markdown).

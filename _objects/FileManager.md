@@ -1,6 +1,8 @@
 ---
 title: FileManager
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/filemanager
 ---
 
 FileManager objects can be used to read from or write to files in either the local Drafts app Documents directory (as visible in the Files.app), or iCloud Drive (inside the "Drafts5" folder).

@@ -1,6 +1,8 @@
 ---
 title: URLs
 category: topics
+redirect_to:
+  - https://docs.getdrafts.com/docs/automation/urlschemes
 ---
 
 {% include back.html title="Topics" path="/topics" %}

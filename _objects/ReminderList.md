@@ -1,6 +1,8 @@
 ---
 title: ReminderList
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/reminderlist
 ---
 
 ReminderList objects are used to manipulate and create lists in the built-in Reminders app.

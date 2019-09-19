@@ -1,6 +1,8 @@
 ---
 title: HTMLPreview
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/htmlpreview
 ---
 
 Display of HTML Preview window, the same as the HTMLPreview action step.

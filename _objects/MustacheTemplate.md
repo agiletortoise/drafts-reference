@@ -1,6 +1,8 @@
 ---
 title: MustacheTemplate
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/mustachetemplate
 ---
 
 The `MustacheTemplate` object support rendering of templates using the [Mustache](https://en.wikipedia.org/wiki/Mustache_%28template_system%29) template style.

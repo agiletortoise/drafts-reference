@@ -9,6 +9,10 @@ app-store-url: https://itunes.apple.com/app/id1236254471?ls=1&mt=8&at=11l4Cf&ct=
 mac-app-store-url: https://itunes.apple.com/app/id1435957248?mt=12&at=11l4Cf&ct=site
 # google_analytics: UA-1639692-22
 
+# See: https://github.com/jekyll/jekyll-redirect-from
+plugins:
+  - jekyll-redirect-from
+  
 collections:
   objects:
     output: true

@@ -1,5 +1,7 @@
 ---
 title: Drafts Reference
+redirect_to:
+  - http://docs.getdrafts.com/docs/actions/scripting/
 ---
 
 Reference documentation and example scripts for use with Drafts 5 and greater.

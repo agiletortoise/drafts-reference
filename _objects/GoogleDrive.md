@@ -1,6 +1,8 @@
 ---
 title: GoogleDrive
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/googledrive
 ---
 
 GoogleDrive objects can be used to work with files in Google Drive accounts.

@@ -1,6 +1,8 @@
 ---
 title: Event
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/event
 ---
 
 Event object represent individual calendar events.

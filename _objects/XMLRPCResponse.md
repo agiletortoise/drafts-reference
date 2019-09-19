@@ -1,6 +1,8 @@
 ---
 title: XMLRPCResponse
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/xmlrpc
 ---
 
 XMLRPCResponse objects are returned by calls to using XML-RPC interfaces.

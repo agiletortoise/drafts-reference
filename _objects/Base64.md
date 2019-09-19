@@ -1,6 +1,8 @@
 ---
 title: Base64
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/base64
 ---
 
 Helper methods to encode and decode [Base64](https://en.wikipedia.org/wiki/Base64) strings.

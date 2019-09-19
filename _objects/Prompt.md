@@ -1,6 +1,8 @@
 ---
 title: Prompt
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/prompt
 ---
 
 Prompts allow the creation and display of custom dialogs.

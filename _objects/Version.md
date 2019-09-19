@@ -1,6 +1,8 @@
 ---
 title: Version
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/version
 ---
 
 The Version object represents a single version in the version history of a draft. Versions can by loaded through the `versions` property of the {% ref Draft %} object.

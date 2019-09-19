@@ -1,6 +1,8 @@
 ---
 title: XMLRPC
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/xmlrpc
 ---
 
 The XMLRPC object is a convenience method to provide an easy way to [XML-RPC](http://xmlrpc.scripting.com) web services. The `request` function takes care of converting native Javascript objects and values to the XML parameters required for the XML-RPC interface, and converts the XML responses returned to Javascript objects.

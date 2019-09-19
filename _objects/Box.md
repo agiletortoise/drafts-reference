@@ -1,6 +1,8 @@
 ---
 title: Box
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/box
 ---
 
 Box objects can be used to work with files in a Box.com account.

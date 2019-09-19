@@ -1,6 +1,8 @@
 ---
 title: Workspace
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/workspace
 ---
 
 Represents a Workspace. Can be used to inquire and load workspaces and apply them using methods on the {% ref App %} object.

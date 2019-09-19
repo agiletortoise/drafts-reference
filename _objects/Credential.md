@@ -1,6 +1,8 @@
 ---
 title: Credential
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/credential
 ---
 
 Credential objects can be used in actions which require the user to provide a username, password and optionally a host name, to connect to a service. By using credentials objects, actions can be written to connect to arbitrary web services without hard coding credentials into the action.

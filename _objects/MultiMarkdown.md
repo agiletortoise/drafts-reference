@@ -1,6 +1,8 @@
 ---
 title: MultiMarkdown
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/multimarkdown
 ---
 
 Drafts includes a full version of the MultiMarkdown 6 engine to render Markdown text to HTML and other supported formats.  For details on the meaning of the various options, refer to [MultiMarkdown documentation](https://github.com/fletcher/MultiMarkdown-6).

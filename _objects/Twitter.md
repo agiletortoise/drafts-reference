@@ -1,6 +1,8 @@
 ---
 title: Twitter
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/twitter
 ---
 
 Script integration with [Twitter](http://twitter.com). The `updateStatus` method is a convenience method for posting a tweet, but the entire [Twitter API](https://developer.twitter.com/en/docs/api-reference-index) can be used with the `request` method, which handles OAuth authentication and authorization.

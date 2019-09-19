@@ -1,6 +1,8 @@
 ---
 title: Device
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/device
 ---
 
 Drafts defines a single global "device" object which provides access to information about the current device.

@@ -1,6 +1,8 @@
 ---
 title: Reminder
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/reminder
 ---
 
 Reminder objects represent individual tasks in a list in the built-in Reminders app.

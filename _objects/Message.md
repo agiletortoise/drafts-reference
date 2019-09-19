@@ -1,6 +1,8 @@
 ---
 title: Message
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/message
 ---
 
 The Message object can be used to create and send mail iMessages, similar to those created by a "Message" action step.

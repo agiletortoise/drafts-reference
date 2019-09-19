@@ -1,6 +1,8 @@
 ---
 title: Mail
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/mail
 ---
 
 The Mail object can be used to create and send mail messages, similar to those created by a "Mail" action step.

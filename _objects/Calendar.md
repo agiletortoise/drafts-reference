@@ -1,6 +1,8 @@
 ---
 title: Calendar
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/calendar
 ---
 
 Calendar objects are used to manipulate and create calendars in the built-in Calendars app and its associated accounts.

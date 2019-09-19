@@ -1,6 +1,8 @@
 ---
 title: Context
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/context
 ---
 
 A single global "context" object is available to scripts to control flow of the currently running action.

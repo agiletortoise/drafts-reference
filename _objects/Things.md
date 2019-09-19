@@ -1,6 +1,8 @@
 ---
 title: Things
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/things
 ---
 
 [Things](https://culturedcode.com/things/) is a popular task and project management app from Cultured Code. Things supports advanced URL schemes (required Things v3.4 or greater on iOS) which can accept multiple todos, projects, headings in a single call to the app. The scripting interfaces below are convenience wrappers that allow easy creation and encoding of the URLs needed to pass this type of information to Things.

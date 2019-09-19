@@ -1,6 +1,8 @@
 ---
 title: Editor
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/editor
 ---
 
 A global "editor" object is available in all action scripts. This object allows manipulation of the main editing window in Drafts, altering the text, text selections, or loading a different draft into the editor, etc.

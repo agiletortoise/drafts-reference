@@ -1,6 +1,8 @@
 ---
 title: Dropbox
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/dropbox
 ---
 
 Dropbox objects can be used to work with files in a [Dropbox](http://dropbopx.com) account. The `read` and `write` methods are simple wrappers for uploading and reading content of files on Dropbox.

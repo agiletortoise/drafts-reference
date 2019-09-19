@@ -1,6 +1,8 @@
 ---
 title: Action
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/action
 ---
 
 In addition to being able to lookup an action using the find method, a single global `action` object is created and available in scripts to inquire about the current action and control flow.

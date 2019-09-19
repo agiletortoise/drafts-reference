@@ -1,6 +1,8 @@
 ---
 title: OneDrive
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/onedrive
 ---
 
 OneDrive objects can be used to work with files in a OneDrive account.

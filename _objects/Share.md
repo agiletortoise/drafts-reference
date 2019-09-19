@@ -1,6 +1,8 @@
 ---
 title: Share
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/share
 ---
 
 Methods to share via system share sheet.

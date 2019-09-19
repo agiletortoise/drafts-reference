@@ -1,6 +1,8 @@
 ---
 title: Draft
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/draft
 ---
 
 The Draft object represents a single draft.  When an action is run, the current draft is available as the global variable "draft".  Scripts can also create new drafts, access and set values, and update the draft to persist changes.

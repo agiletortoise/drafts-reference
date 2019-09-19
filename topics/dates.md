@@ -1,6 +1,8 @@
 ---
 title: Working with Dates
 category: topics
+redirect_to:
+  - http://docs.getdrafts.com/
 ---
 
 {% include back.html title="Topics" path="/topics" %}

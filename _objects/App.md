@@ -1,6 +1,8 @@
 ---
 title: App
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/app
 ---
 
 Drafts defines a single global "app" object which provides access to application level functions.

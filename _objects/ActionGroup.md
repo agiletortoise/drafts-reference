@@ -1,6 +1,8 @@
 ---
 title: ActionGroup
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/actiongroup
 ---
 
 Represents an action group. Can be used to inquire and load action groups in the action list and extended keyboard using methods on the {% ref App %} object.

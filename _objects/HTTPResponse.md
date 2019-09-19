@@ -1,6 +1,8 @@
 ---
 title: HTTPResponse
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/httpresponse
 ---
 
 HTTPResponse objects are returned by calls to [HTTP]({{ site.baseurl }}/objects/HTTP) methods.

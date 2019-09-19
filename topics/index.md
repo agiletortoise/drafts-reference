@@ -1,5 +1,7 @@
 ---
 title: Topics
+redirect_to:
+  - http://docs.getdrafts.com/
 ---
 
 ### Miscellaneous Reference

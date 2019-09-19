@@ -1,6 +1,8 @@
 ---
 title: CallbackURL
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/callbackurl
 ---
 
 CallbackURL objects can be used to open x-callback-url requests and wait for a response from the target app.

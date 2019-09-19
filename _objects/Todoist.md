@@ -1,6 +1,8 @@
 ---
 title: Todoist
 category: object
+redirect_to:
+  - http://scripting.getdrafts.com/classes/todoist
 ---
 
 Script integration with [Todoist](http://todoist.com). This object handles OAuth authentication and request signing. The entire [Todoist REST API](https://developer.todoist.com/rest/v8) can be used with the `request` method, and convenience methods are provided for common API endpoints to manage tasks, projects, comments and labels.
